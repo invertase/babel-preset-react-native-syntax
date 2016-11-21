@@ -2,7 +2,7 @@
 
 This preset includes the syntax plugins from `babel-preset-react-native`.
 
-This is useful for react-native libraries that want to use Babel plugins that may not be supported by React Native's default preset.
+This is useful for React Native libraries that want to use Babel plugins that may not be supported by React Native's default preset.
 
 Previously, you'd have to either:
 
