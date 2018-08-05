@@ -37,6 +37,8 @@ Additionally this allows editing/viewing library source from within `node_module
 }
 ```
 
+----
+
 #### Credits
 
 - [Skevy](https://github.com/skevy) for his original repo: https://github.com/skevy/babel-preset-react-native-syntax
