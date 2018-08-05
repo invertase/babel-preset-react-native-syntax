@@ -1,29 +1,43 @@
-# babel-preset-react-native-syntax
+<p align="center">
+  <a href="https://invertase.io">
+    <img src="https://static.invertase.io/assets/invertase-logo-small.png"><br/>
+  </a>
+  <h2 align="center">Babel Preset React Native Syntax</h2>
+</p>
 
-This preset includes the syntax plugins from `babel-preset-react-native`.
+<p align="center">
+  <a href="https://www.npmjs.com/package/@invertase/babel-preset-react-native-syntax"><img src="https://img.shields.io/npm/dm/@invertase/babel-preset-react-native-syntax.svg?style=flat-square" alt="NPM downloads"></a>
+  <a href="https://www.npmjs.com/package/@invertase/babel-preset-react-native-syntax"><img src="https://img.shields.io/npm/v/@invertase/babel-preset-react-native-syntax.svg?style=flat-square" alt="NPM version"></a>
+  <a href="/LICENSE"><img src="https://img.shields.io/npm/l/@invertase/babel-preset-react-native-syntax.svg?style=flat-square" alt="License"></a>
+  <a href="https://discord.gg/C9aK28N"><img src="https://img.shields.io/discord/295953187817521152.svg?logo=discord&style=flat-square&colorA=7289da&label=discord" alt="Chat"></a>
+  <a href="https://twitter.com/invertaseio"><img src="https://img.shields.io/twitter/follow/invertaseio.svg?style=social&label=Follow" alt="Follow on Twitter"></a>
+</p>
+
+This preset includes the latest syntax plugins as specified in `babel-preset-react-native`.
+
+> Latest supported React Native version: **^0.56.0**
+
+> Latest supported Babel version: **^7.0.0**
+
+----
 
 This is useful for React Native libraries that want to use Babel plugins that may not be supported by React Native's default preset.
+ 
+Additionally this allows editing/viewing library source from within `node_modules` (useful for debugging) as there's no transformation of library code (unless you add any additional transform plugins).
 
-Previously, you'd have to either:
-
-  1. Require your users to use ALL of the Babel plugins that you use in your lib in THEIR .babelrc
-  2. Transpile your code down to ES5
-
-Option 1) is super unforuntate, and resulted in creating a catch-all preset like `babel-preset-react-native-stage-0` that includes everything. There is a high chance that your library will break for people.
-
-Option 2), though the same as what the rest of the Node community does, makes it more difficult to view and edit library source from within node_modules (useful for debugging).
-
-In the future, the React Native packager may go down the route of https://github.com/facebook/react-native/issues/10966. At that point, a package author may still utilize this preset to help them compile their code to something akin to "sources.react-native-v1" (but the author would still transpile all the way down to ES5 for the "main" package entry point).
-
-For now though, this is a solution that allows authors to transpile their code to "ES-React Native" (I just made that up just now...it's not a real thing).
-
-It can be used like this:
+### Example Usage:
 
 ```
 {
-  "presets": ["react-native-syntax"],
+  "presets": ["@invertase/react-native-syntax"],
   "plugins": [
-    ...any non-react-native plugins here, such as transform-decorators-legacy...
-  ],
+    "transform-flow-strip-types",
+    "transform-decorators-legacy"
+  ]
 }
 ```
+
+#### Credits
+
+- [Skevy](https://github.com/skevy) for his original repo: https://github.com/skevy/babel-preset-react-native-syntax
+

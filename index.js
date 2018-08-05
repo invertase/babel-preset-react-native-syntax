@@ -1,15 +1,15 @@
 module.exports = function preset() {
   return {
     plugins: [
-      "syntax-async-functions",
-      "syntax-class-properties",
-      "syntax-flow",
       "syntax-jsx",
-      "syntax-object-rest-spread",
-      "syntax-trailing-function-commas",
-      "syntax-exponentiation-operator",
+      "syntax-flow",
+      "syntax-async-functions",
       "syntax-async-generators",
+      "syntax-class-properties",
       "syntax-optional-chaining",
+      "syntax-object-rest-spread",
+      "syntax-exponentiation-operator",
+      "syntax-trailing-function-commas",
     ]
   }
 };
