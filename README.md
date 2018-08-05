@@ -27,7 +27,7 @@ Additionally this allows editing/viewing library source from within `node_module
 
 ### Example Usage:
 
-```
+```json
 {
   "presets": ["@invertase/react-native-syntax"],
   "plugins": [
