@@ -21,6 +21,10 @@ This preset includes the latest syntax plugins as specified in `babel-preset-rea
 
 ----
 
+> `npm i @invertase/babel-preset-react-native-syntax`
+
+----
+
 This is useful for React Native libraries that want to use Babel plugins that may not be supported by React Native's default preset.
  
 Additionally this allows editing/viewing library source from within `node_modules` (useful for debugging) as there's no transformation of library code (unless you add any additional transform plugins).
