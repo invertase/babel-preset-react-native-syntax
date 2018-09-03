@@ -17,6 +17,8 @@
     "@babel/plugin-syntax-optional-chaining": "^7.0.0",
     "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
     "@babel/plugin-syntax-optional-catch-binding": "^7.0.0",
-    "@babel/plugin-syntax-nullish-coalescing-operator": "^7.0.0"
+    "@babel/plugin-syntax-nullish-coalescing-operator": "^7.0.0",
+    "@babel/plugin-transform-flow-comments": "^7.0.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0"
   }
 }
