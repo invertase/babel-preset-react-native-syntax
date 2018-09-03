@@ -9,14 +9,14 @@
   },
   "author": "Invertase <oss@invertase.io> (http://invertase.io)",
   "dependencies": {
-    "babel-plugin-syntax-jsx": "^7.0.0-beta.3",
-    "babel-plugin-syntax-flow": "^7.0.0-beta.3",
-    "babel-plugin-syntax-async-functions": "^7.0.0-beta.0",
-    "babel-plugin-syntax-class-properties": "^7.0.0-beta.3",
-    "babel-plugin-syntax-async-generators": "^7.0.0-beta.3",
-    "babel-plugin-syntax-optional-chaining": "^7.0.0-beta.3",
-    "babel-plugin-syntax-object-rest-spread": "^7.0.0-beta.3",
-    "babel-plugin-syntax-exponentiation-operator": "^7.0.0-beta.0",
-    "babel-plugin-syntax-trailing-function-commas": "^7.0.0-beta.0"
+    "@babel/plugin-syntax-jsx": "^7.0.0",
+    "@babel/plugin-syntax-flow": "^7.0.0",
+    "@babel/plugin-syntax-typescript": "^7.0.0",
+    "@babel/plugin-syntax-class-properties": "^7.0.0",
+    "@babel/plugin-syntax-async-generators": "^7.0.0",
+    "@babel/plugin-syntax-optional-chaining": "^7.0.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-optional-catch-binding": "^7.0.0",
+    "@babel/plugin-syntax-nullish-coalescing-operator": "^7.0.0"
   }
 }
