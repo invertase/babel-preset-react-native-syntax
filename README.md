@@ -31,13 +31,38 @@ This is useful for React Native libraries that want to use Babel plugins that ma
  
 Additionally this allows editing/viewing library source from within `node_modules` (useful for debugging) as there's no transformation of library code (unless you add any additional transform plugins).
 
-### Example Usage:
+### Example Usage
 
 ```json
 {
   "presets": ["@invertase/react-native-syntax"],
   "plugins": [
-    "transform-flow-strip-types",
+    "transform-decorators-legacy"
+  ]
+}
+```
+
+### Options
+
+#### `flow -> 'strip' | 'comment'`
+
+**Optional**: Whether to transform flow syntax by striping it out entirely or comment it out 
+but preserve the /* @flow */ directive and still be able to use flow.
+
+ - `strip` -> `@babel/plugin-transform-flow-strip-types`
+ - `comment` -> `@babel/plugin-transform-flow-comments`
+ - `undefined` -> do nothing - flow syntax remains untouched
+
+#### Example
+```json
+{
+  "presets": [
+    "@invertase/react-native-syntax",
+    {
+      "flow": "comment"
+    }
+  ],
+  "plugins": [
     "transform-decorators-legacy"
   ]
 }
