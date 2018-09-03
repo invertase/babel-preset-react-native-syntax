@@ -17,6 +17,8 @@ This preset includes the latest syntax plugins as specified in `babel-preset-rea
 
 > Latest supported React Native version: **^0.56.0**
 
+> Latest supported Metro version: **^0.45.0**
+
 > Latest supported Babel version: **^7.0.0**
 
 ----
